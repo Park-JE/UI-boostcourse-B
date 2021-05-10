@@ -1,0 +1,256 @@
+/*Eric Meyer’s “Reset CSS” 2.0*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+}
+
+* {
+	font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+}
+
+.wrap {
+	min-width: 1920px;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 66px;
+    background-color: rgba(64, 64, 64, 0.75);
+	z-index: 100;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo {
+	position: absolute;
+	top: 50%;
+	margin: -12px 0 0;
+}
+
+.container {
+	min-width: 1920px;
+	margin: 0 auto;
+}
+
+#invite {
+	height: 750px;
+	margin: 0 auto;
+	background: url(../image/section_invite.jpg) #fff no-repeat center center;
+}
+
+#creator {
+	height: 822px;
+	margin: 0 auto;
+	background: url(../image/section_creator.jpg) #f9939d no-repeat center center;
+}
+
+#store {
+	height: 1084px;
+	margin: 0 auto;
+	background: url(../image/section_store.jpg) #d5e43f no-repeat center center;
+}
+
+.store_list {
+	position: relative;
+	top: 300px;
+	width: 980px;
+	margin: 0 auto;
+}
+
+.store_list:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.store_list li {
+	float: left;
+	margin-right: 20px;
+	width: 230px;
+}
+
+.store_list li:nth-child(4n) {
+	margin-right: 0px;
+}
+
+.store_list .item_link {
+	position: relative;
+	display: block;
+	height: 230px;
+}
+
+.store_list .item_link:hover .dimmed, .store_list .item_link:focus .dimmed{
+	display: block;
+}
+
+.store_list .item_link img {
+	border-radius: 10px;
+}
+
+.store_list .dimmed {
+	display: none;
+	border-radius: 10px;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background-color: rgba(96, 132, 2, 0.9);
+	text-align: center;
+	color: #fff
+}
+
+.store_list .dimmed_info {
+	position: relative;
+	top: 50%;
+	margin-top: -45px;
+}
+
+.store_list .dimmed .discount {
+	display: block;
+	font-size: 60px;
+	margin-bottom: 10px;
+}
+
+.store_list .dimmed .time {
+	font-size: 20px;
+}
+
+.store_list .item_info {
+	font-size: 20px;
+	color: #1b1d21;
+	text-align: center;
+	height: 140px;
+}
+
+.store_list .title {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 20px 10px 10px;
+}
+
+.store_list .item_info strong {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#recipe {
+	position: relative;
+	height: 1030px;
+	margin: 0 auto;
+	background: url(../image/pattern_recipe.png) #b893f9 repeat-x center center;
+}
+
+#recipe .background_image {
+	height: 100%;
+	background: url(../image/section_recipe.png) no-repeat center center;
+}
+
+.recipe_list {
+	position: relative;
+	top: 374px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.recipe_list:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.recipe_list li {
+	float: left;
+	margin: 0 10px;
+}
+
+.recipe_list a {
+	width: 480px;
+	height: 482px;
+	display: block;
+}
+
+#recipe .btn {
+	display: block;
+	margin-left: -155px;
+	width: 310px; height: 91px;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	background: url(../image/go_recipe.gif) no-repeat 0 0;
+}
+
+#recipe .btn:hover, #recipe .btn:focus{
+	background: url(../image/go_recipe_over.gif) no-repeat 0 0;
+}
+
+#faq {
+	background-color: #fff;
+	padding: 100px 0;
+}
+
+#fap h2 img {
+	display: block;
+	margin: 0 auto;
+}
+
+footer {
+	width: 100%;
+	height: 80px;
+	background-color: #e0e4eb;
+	font-size: 18px;
+	color: #70757d;
+	text-align: center;
+	line-height: 80px;
+}
